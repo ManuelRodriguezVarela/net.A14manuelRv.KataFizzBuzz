@@ -7,8 +7,10 @@ public class FizzBuzz {
 		
 		if(number%3==0)
 			result = "fizz";
-		else if(number%5==0)
+		if(number%5==0)
 			result = "buzz";
+		if(number%5==0 && number%3==0)
+			result = "fizzbuzz";
 		
 		return result;
 	}
