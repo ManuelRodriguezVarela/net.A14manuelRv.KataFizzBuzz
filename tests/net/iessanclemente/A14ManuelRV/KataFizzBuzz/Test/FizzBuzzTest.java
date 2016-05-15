@@ -23,5 +23,14 @@ public class FizzBuzzTest {
 	public void getResultFizzNumberDividable3() {
 		assertEquals("fizz", fb.getResult(3));
 	}
+	
+/*
+ * Test that checks number divisible by 5 
+ * returns buzz
+ */
+	@Test
+	public void getResultBuzzNumberDividable5() {
+		assertEquals("buzz", fb.getResult(5));
+	}
 
 }
