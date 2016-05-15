@@ -53,7 +53,7 @@ public class FizzBuzzTest {
 	
 /*
  * Test that checks number to contains 5 
- * returns fizz
+ * returns buzz
  */
 	@Test
 	public void getResulFizzIfNumberContain5() {
