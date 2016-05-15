@@ -8,11 +8,9 @@ public class FizzBuzz
 		
 		if(number%5 == 0 && number%3 == 0)
 			result = "fizzbuzz";
-		
 		else if(isMultipleOfThree(number)|| isContainsThree(number))
 			result = "fizz";
-		
-		else if(number%5 == 0)
+		else if(isMultipleOfFive(number)|| isContainsFive(number))
 			result = "buzz";
 		
 		return result;
@@ -28,4 +26,15 @@ public class FizzBuzz
 		String numberName = Integer.toString(number);
         return numberName.contains("3"); 
     } 
+
+	private static boolean isMultipleOfFive(int number)
+	{
+		return number % 5 == 0;
+	}
+	
+	private static boolean isContainsFive(int number)
+	{
+		String numberName = Integer.toString(number);
+		return numberName.contains("5");
+	}
 }

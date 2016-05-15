@@ -50,6 +50,15 @@ public class FizzBuzzTest {
 	public void getResulNumberIfNumberNotDividable5And3And5Or3() {
         assertEquals("2", fb.getResult(2));
 	}
+	
+/*
+ * Test that checks number to contains 5 
+ * returns fizz
+ */
+	@Test
+	public void getResulFizzIfNumberContain5() {
+        assertEquals("buzz", fb.getResult(52));
+	}
 
 /*
  * Test that checks number to contains 3 
