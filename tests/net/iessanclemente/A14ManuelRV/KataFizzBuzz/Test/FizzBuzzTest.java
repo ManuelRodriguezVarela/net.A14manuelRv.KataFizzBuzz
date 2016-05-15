@@ -51,4 +51,12 @@ public class FizzBuzzTest {
         assertEquals("2", fb.getResult(2));
 	}
 
+/*
+ * Test that checks number to contains 3 
+ * returns fizz
+ */
+	@Test
+	public void getResulFizzIfNumberContain3() {
+        assertEquals("fizz", fb.getResult(32));
+	}
 }
